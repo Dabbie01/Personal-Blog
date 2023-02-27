@@ -17,5 +17,4 @@ export default function(timeStamp, showTime = false) {
         return `${date.getFullYear()}-${months}-${dates} ${hour}:${minute}:${second}`;
     }
     return `${date.getFullYear()}-${months}-${dates}`;
-
 }

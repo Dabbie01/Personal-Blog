@@ -9,4 +9,5 @@ async function gets() {
     const resp = await getProject();
     console.log(resp);
 }
+
 window.gets = gets;

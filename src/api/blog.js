@@ -1,7 +1,6 @@
 import request from './request';
 import "@/mock/blog";
 
-
 //获取博客分类
 export async function getBlogCategories() {
     const resp = await request.get("/api/blogtype");

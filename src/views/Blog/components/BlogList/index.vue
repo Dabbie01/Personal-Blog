@@ -85,9 +85,6 @@ export default {
       };
     },
   },
-  //   created() {
-  //       console.log(this.routeInfo);
-  //   },
   methods: {
     async fetchData() {
       return await getBlogs(

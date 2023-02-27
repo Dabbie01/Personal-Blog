@@ -41,7 +41,6 @@ export default {
   span,a{
     margin-right: 15px;
   }
- 
 }
 .markdown-body{
   margin-top: 2em;

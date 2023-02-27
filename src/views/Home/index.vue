@@ -49,7 +49,6 @@ export default {
   components: {
     CarouselItem,
     Icon,
-    // Loading
   },
   data() {
     return {

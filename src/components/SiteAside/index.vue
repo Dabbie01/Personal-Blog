@@ -16,7 +16,7 @@ export default {
   components: {
     Contact,
     Menu,
-    Avatar,
+    Avatar
   },
   created() {
     this.$store.dispatch("setting/fetchSetting");

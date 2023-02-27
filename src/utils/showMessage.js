@@ -2,7 +2,7 @@ import getComponentRootDom from './getComponentRootDom.js';
 import styles from '@/styles/showMessage.module.less';
 import Icon from "@/components/Icon";
 export default function(options) {
-    const content = options.content || '成功了';
+    const content = options.content || '成功了!';
     const type = options.type || 'success';
     const duration = options.duration || 2000;
     const container = options.container || document.body;

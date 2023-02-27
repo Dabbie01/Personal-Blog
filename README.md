@@ -1,4 +1,4 @@
-# my-size
+# my-personal-blog
 
 ## Project setup
 ```
