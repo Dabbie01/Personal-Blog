@@ -16,6 +16,8 @@
         <CarouselItem :carousel="banner"></CarouselItem>
       </li>
     </ul>
+
+    <!-- 向上向下箭头 -->
     <div class="icon icon-up" @click="switchTo(index - 1)" v-show="index >= 1">
       <Icon type="arrowUp"></Icon>
     </div>
@@ -26,6 +28,7 @@
     >
       <Icon type="arrowDown"></Icon>
     </div>
+    
     <ul class="indicator">
       <li
         v-for="(banner, i) in data"
@@ -71,12 +74,13 @@ export default {
       if (this.switching) {
         return;
       }
-      if (e.deltaY > 5) {
+      // WheelEvent.deltaY属性用于在向下滚动网页时返回正的double值，在向上滚动网页时返回负的double值，否则返回零。这是一个只读属性
+      if (e.deltaY > 1) {
         if (this.index < this.data.length - 1) {
           this.index++;
           this.switching = true;
         }
-      } else if (e.deltaY < -5) {
+      } else if (e.deltaY < -1) {
         if (this.index > 0) {
           this.index--;
           this.switching = true;
