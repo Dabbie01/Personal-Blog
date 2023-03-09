@@ -1,8 +1,16 @@
+<!--
+ * @Author: Dabbie 2310734576@qq.com
+ * @Date: 2023-02-27 14:06:41
+ * @LastEditors: Dabbie 2310734576@qq.com
+ * @LastEditTime: 2023-03-06 21:45:52
+ * @FilePath: \personal-blog-system-main\src\views\Blog\Details.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <Layout>
     <template>
       <div class="main-container" ref="mainContainer" v-loading="isLoading">
-        <BlogDeail :blog="data" v-if="data"></BlogDeail>
+        <BlogDetail :blog="data" v-if="data"></BlogDetail>
         <BlogComment v-if="!isLoading"></BlogComment>
       </div>
     </template>
@@ -16,7 +24,7 @@
 
 <script>
 import Layout from "@/components/Layout";
-import BlogDeail from "./components/BlogDetail";
+import BlogDetail from "./components/BlogDetail";
 import BlogTOC from "./components/BlogTOC";
 import BlogComment from "./components/BlogComment";
 import fetchData from "@/mixins/fetchData";
@@ -27,7 +35,7 @@ export default {
   mixins: [fetchData(), mainScroll("mainContainer")],
   components: {
     Layout,
-    BlogDeail,
+    BlogDetail,
     BlogTOC,
     BlogComment,
   },
